@@ -1,0 +1,441 @@
+<Project>
+  <Name>PRCSA Application</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>ClassDiagram</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Person</Name>
+        <Access>Public</Access>
+        <Location left="35" top="10" />
+        <Size width="241" height="230" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">protected internal String forename</Member>
+        <Member type="Field">protected internal String surname</Member>
+        <Member type="Field">protected internal Date dateOfBirth</Member>
+        <Member type="Field">protected internal String email</Member>
+        <Member type="Field">protected internal String contactNo</Member>
+        <Member type="Constructor">public Person()</Member>
+        <Member type="Constructor">public Person(String forename, String surname)</Member>
+        <Member type="Method">public String getFullName()</Member>
+        <Member type="Method">public int getAge()</Member>
+        <Modifier>Abstract</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Member</Name>
+        <Access>Public</Access>
+        <Location left="35" top="314" />
+        <Size width="439" height="434" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private int memberNo</Member>
+        <Member type="Field">Address memberAddress</Member>
+        <Member type="Field">int avgRating</Member>
+        <Member type="Field">int balance</Member>
+        <Member type="Field">TransactionHistory transactionHistory</Member>
+        <Member type="Field">AdvertHistory advertHistory</Member>
+        <Member type="Constructor">public Member()</Member>
+        <Member type="Constructor">public Member(String fName, String sName, date dOB, String email, String contactNo)</Member>
+        <Member type="Method">public Advert getAdvertAt(int index)</Member>
+        <Member type="Method">public int getIndexOfAdvert(Advert ad)</Member>
+        <Member type="Method">public ArrayList&lt;Advert&gt; getLiveAdverts()</Member>
+        <Member type="Method">public ArrayList&lt;Advert&gt; getCompletedAdverts()</Member>
+        <Member type="Method">public int getNoLiveAdverts()</Member>
+        <Member type="Method">public int getNoCompletedAdverts()</Member>
+        <Member type="Method">public Transaction getTransactionAt(int index)</Member>
+        <Member type="Method">public int getIndexOfTransaction(Transaction ta)</Member>
+        <Member type="Method">public int getNoTransactions()</Member>
+        <Member type="Method">public int getMemberAverageRating()</Member>
+        <Member type="Method">public int getPendingCredits()</Member>
+        <Member type="Method">public void addAdvert(String args)</Member>
+        <Member type="Method">public void addTransaction(String args)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Advert</Name>
+        <Access>Public</Access>
+        <Location left="1354" top="196" />
+        <Size width="364" height="434" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int advertNo</Member>
+        <Member type="Field">OfferHistory offers</Member>
+        <Member type="Field">ItemType itemType</Member>
+        <Member type="Field">ItemCategory itemCategory</Member>
+        <Member type="Field">AdvertType adType</Member>
+        <Member type="Field">String adTitle</Member>
+        <Member type="Field">String adDescription</Member>
+        <Member type="Field">Date adPosted</Member>
+        <Member type="Field">Date adExpires</Member>
+        <Member type="Field">int adCost</Member>
+        <Member type="Field">Object adImage</Member>
+        <Member type="Field">Bool transportInc</Member>
+        <Member type="Field">String tags</Member>
+        <Member type="Field">Date adCompleted</Member>
+        <Member type="Constructor">public Advert()</Member>
+        <Member type="Constructor">public Advert(String thereIsNoRoomHere)</Member>
+        <Member type="Method">public Offer getOfferAt(int index)</Member>
+        <Member type="Method">public int getNoOfOffers()</Member>
+        <Member type="Method">public int getIndexOfOffer(Offer offer)</Member>
+        <Member type="Method">public Offer getLatestOffer()</Member>
+        <Member type="Method">public void addOffer(String args)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Review</Name>
+        <Access>Public</Access>
+        <Location left="787" top="625" />
+        <Size width="242" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int reviewNo</Member>
+        <Member type="Field">int reviewValue</Member>
+        <Member type="Field">String reviewText</Member>
+        <Member type="Constructor">public Review()</Member>
+        <Member type="Constructor">public Review(int revNo, int revVal, String text)</Member>
+        <Member type="Method">public void editReviewText()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Enum">
+        <Name>AdvertType</Name>
+        <Access>Public</Access>
+        <Location left="1534" top="10" />
+        <Size width="162" height="95" />
+        <Collapsed>False</Collapsed>
+        <Value>Offer</Value>
+        <Value>Request</Value>
+      </Entity>
+      <Entity type="Class">
+        <Name>Offer</Name>
+        <Access>Public</Access>
+        <Location left="1276" top="655" />
+        <Size width="444" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int offerNo</Member>
+        <Member type="Field">int advertNo</Member>
+        <Member type="Field">int offererNo</Member>
+        <Member type="Field">int offereeNo</Member>
+        <Member type="Field">String offerText</Member>
+        <Member type="Field">Date offerDate</Member>
+        <Member type="Constructor">public Offer()</Member>
+        <Member type="Constructor">public Offer(int offerNo, int adNo, int offerer, int offeree, String offerText, Date date)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Address</Name>
+        <Access>Public</Access>
+        <Location left="291" top="10" />
+        <Size width="337" height="181" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">String address1</Member>
+        <Member type="Field">String address2</Member>
+        <Member type="Field">String city</Member>
+        <Member type="Field">String postcode</Member>
+        <Member type="Constructor">public Address()</Member>
+        <Member type="Constructor">public Address(String ad1, String ad2, String city, String postcode)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AdvertHistory</Name>
+        <Access>Public</Access>
+        <Location left="668" top="10" />
+        <Size width="263" height="281" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">ArrayList&lt;Advert&gt; advertList</Member>
+        <Member type="Constructor">public AdvertHistory()</Member>
+        <Member type="Constructor">public AdvertHistory(Member owner)</Member>
+        <Member type="Method">public Advert getAdvertAt(int index)</Member>
+        <Member type="Method">public int getIndexOfAdvert(Advert ad)</Member>
+        <Member type="Method">public ArrayList&lt;Advert&gt; getLiveAdverts()</Member>
+        <Member type="Method">public ArrayList&lt;Advert&gt; getCompletedAdverts()</Member>
+        <Member type="Method">public int getNoLiveAdverts()</Member>
+        <Member type="Method">public int getNoCompletedAdverts()</Member>
+        <Member type="Method">public int getPendingCredits()</Member>
+        <Member type="Method">public void addAdvert(String args)</Member>
+        <Member type="Method">public Object fetchAdvert()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>MemberList</Name>
+        <Access>Public</Access>
+        <Location left="515" top="625" />
+        <Size width="241" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">ArrayList&lt;Member&gt; memberList</Member>
+        <Member type="Constructor">public MemberList()</Member>
+        <Member type="Method">public void addMember(Member member)</Member>
+        <Member type="Method">public Member removeMemberAt()</Member>
+        <Member type="Method">public String[] getAllNames()</Member>
+        <Member type="Method">public Member getMemberAt()</Member>
+        <Member type="Method">public int getSize()</Member>
+        <Member type="Method">public Object fetchMember()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Enum">
+        <Name>ItemType</Name>
+        <Access>Public</Access>
+        <Location left="1127" top="10" />
+        <Size width="162" height="97" />
+        <Collapsed>False</Collapsed>
+        <Value>Product</Value>
+        <Value>Service</Value>
+      </Entity>
+      <Entity type="Class">
+        <Name>TransactionHistory</Name>
+        <Access>Public</Access>
+        <Location left="559" top="352" />
+        <Size width="298" height="230" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">ArrayList&lt;Transaction&gt; transactionList</Member>
+        <Member type="Constructor">public TransactionHistory()</Member>
+        <Member type="Constructor">public TransactionHistory(Member owner)</Member>
+        <Member type="Method">public Transaction getTransactionAt(int index)</Member>
+        <Member type="Method">public int getIndexOfTransaction(Transaction ta)</Member>
+        <Member type="Method">public int getNoTransactions()</Member>
+        <Member type="Method">public int getMemberAverageRating()</Member>
+        <Member type="Method">public void addTransaction(Transaction transaction)</Member>
+        <Member type="Method">public Object fetchTransaction()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Transaction</Name>
+        <Access>Public</Access>
+        <Location left="958" top="278" />
+        <Size width="374" height="264" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int transactionNo</Member>
+        <Member type="Field">int payeeNo</Member>
+        <Member type="Field">int payerNo</Member>
+        <Member type="Field">int creditsPaid</Member>
+        <Member type="Field">Date dateCompleted</Member>
+        <Member type="Constructor">public Transaction()</Member>
+        <Member type="Constructor">public Transaction(int tNo, int payee, int payer, int paid, Date dateComp)</Member>
+        <Member type="Method">public int getTransactionRating()</Member>
+        <Member type="Method">public Review getTransactionReview()</Member>
+        <Member type="Method">public void addAdvert(Advert advert)</Member>
+        <Member type="Method">public void addReview(Review review)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>OfferHistory</Name>
+        <Access>Public</Access>
+        <Location left="1085" top="570" />
+        <Size width="177" height="230" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">ArrayList&lt;Offer&gt; offerList</Member>
+        <Member type="Constructor">public OfferHistory()</Member>
+        <Member type="Constructor">public OfferHistory(Member owner)</Member>
+        <Member type="Method">public Offer getOfferAt(int index)</Member>
+        <Member type="Method">public int getNoOfOffers()</Member>
+        <Member type="Method">public int getIndexOfOffer()</Member>
+        <Member type="Method">public Offer getLatestOffer()</Member>
+        <Member type="Method">public void addOffer(Offer offer)</Member>
+        <Member type="Method">public Object fetchOffer()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ItemCategory</Name>
+        <Access>Public</Access>
+        <Location left="1337" top="10" />
+        <Size width="180" height="113" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">ArrayList&lt;String&gt; category</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="1" second="6">
+        <Label>Holds</Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>452</X>
+          <Y>289</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Dependency" first="2" second="4">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1438</X>
+          <Y>171</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1623</X>
+          <Y>142</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Association" first="8" second="1">
+        <Label>Records</Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>487</X>
+          <Y>774</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>258</X>
+          <Y>808</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="1" second="7">
+        <Label>Holds</Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>501</X>
+          <Y>340</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>801</X>
+          <Y>339</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="7" second="2">
+        <Label>Maintains</Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>1329</X>
+          <Y>219</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Dependency" first="2" second="9">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1438</X>
+          <Y>171</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1213</X>
+          <Y>142</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Association" first="1" second="10">
+        <Label>Holds</Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>515</X>
+          <Y>499</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>526</X>
+          <Y>499</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="10" second="11">
+        <Label>Maintains</Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>882</X>
+          <Y>470</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>884</X>
+          <Y>386</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="2" second="12">
+        <Label>Holds</Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1284</X>
+          <Y>591</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1284</X>
+          <Y>591</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="12" second="5">
+        <Label>Records</Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1165</X>
+          <Y>827</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1247</X>
+          <Y>846</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="11" second="3">
+        <Label>Holds</Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1078</X>
+          <Y>577</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>907</X>
+          <Y>587</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Generalization" first="1" second="0">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>156</X>
+          <Y>273</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>156</X>
+          <Y>273</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Dependency" first="2" second="13">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1438</X>
+          <Y>171</Y>
+        </BendPoint>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>

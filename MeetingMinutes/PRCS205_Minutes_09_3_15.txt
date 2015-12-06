@@ -1,0 +1,14 @@
+Web Application  - 
+ - A lot of the application has been done functionality wise but the design now needs to be improved.
+ - New functionality relating to the user has to be integrated.
+
+Desktop Application - 
+ - Regular Expressions and validation needs to be implemented in the desktop application. 
+
+Android Application - 
+ - Testing before the architecture demo needed to be done. 
+ - Have sorted out a number of the issues arrising.
+
+Logo Design has been decided and so has colour schemes.
+Database - 
+	Regular Expressions and Constraints to be added later as adding it in too earlier may result in some errors we are unsure about, due to the amount of content already in the database.

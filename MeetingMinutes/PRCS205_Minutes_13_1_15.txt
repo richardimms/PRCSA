@@ -1,0 +1,9 @@
+Group roles have been decided - see bitbucket and docs.
+Scrum roles have been decided - see bitbucket and docs.
+Repository created - not everyone is part of the repo yet. Send reminders! Module leader has been added.
+Awaiting creation privileges from module leader for Pivotal Tracker.
+Richard is working on Gantt charts and management plans.
+Dominic has been working on administrative tasks.
+Everyone has agreed to work through user/functional requirements to be reviewed afternoon of the 16th Jan. (Dom, Phil, Brian)
+We're still down one group member - all we can do is wait. 
+Database table design will be the main team's next task. 

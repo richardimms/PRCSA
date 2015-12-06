@@ -1,0 +1,14 @@
+To do list application.
+
+
+> Figure out advertHistory methods
+ > getIndexOfAdvert - adverts doesn't have a method to getIndexOfAdvert. 
+ > Organise how to find out 'Live' and 'Completed'
+ > Find a way of geting the pending credits number.
+
+> Figure out how OfferHistory to get the lastest offer (get the latest date)
+> Figure out how to editReviewText()
+> Transaction
+	> getTransactionRating
+	> getTransactionReview
+> TransactionHistory

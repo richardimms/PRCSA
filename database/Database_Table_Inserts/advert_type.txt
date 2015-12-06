@@ -1,0 +1,9 @@
+CREATE TABLE advert_types
+    (
+	advert_type_id NUMBER
+		CONSTRAINT advert_type_ad_type_id_pk PRIMARY KEY,
+	name VARCHAR(20)
+		CONSTRAINT advert_name_nn NOT NULL,
+	description VARCHAR(100)
+		CONSTRAINT advert_description_nn NOT NULL
+    );

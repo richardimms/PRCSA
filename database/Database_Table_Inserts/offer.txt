@@ -1,0 +1,17 @@
+CREATE TABLE offers
+	(
+		offer_id NUMBER
+			CONSTRAINT offer_offer_id_pk PRIMARY KEY,
+		adverts_id NUMBER
+			CONSTRAINT offer_advert_id_fk REFERENCES adverts(adverts_id),
+		adverts_type_id NUMBER
+			CONSTRAINT offer_ad_type_id_fk REFERENCES advert_types(advert_type_id),
+		offere NUMBER
+			CONSTRAINT offer_offere_fk REFERENCES members(member_id),
+		offeree NUMBER
+			CONSTRAINT offer_offeree_fk REFERENCES members(member_id),
+		text VARCHAR (500)
+			CONSTRAINT offer_text_nn NOT NULL,
+		offers_date DATE
+			CONSTRAINT offer_date_nn NOT NULL
+	);

@@ -1,0 +1,7 @@
+CREATE TABLE item_types
+(
+	item_type_id NUMBER
+		CONSTRAINT items_item_id_pk PRIMARY KEY,
+	item_type_description VARCHAR(200)
+		CONSTRAINT items_item_des_nn NOT NULL
+);

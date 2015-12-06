@@ -1,0 +1,2 @@
+Check BLOB size in database:
+	select advert_id, DBMS_LOB.getlength(image) from adverts 

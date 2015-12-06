@@ -1,0 +1,12 @@
+Decision to keep services and reviews separate
+Completion of UNF first pass for database
+Decision to make adverts have the option to be ongoing - users can select this. Otherwise, 
+	the advert is removed upon completion.
+Work delegation:
+	Dom - 3 cognitive walkthroughs. 
+		1. Web app - creating a service advert - offer or request
+		2. Android - creating a product advert - offer or request
+		3. Web app - responding to an advert
+	Phil - Layout, colour and interface design
+	Richard - management report and pivotal tracker setup
+	Brian - Use case modelling, state machines. 

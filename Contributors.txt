@@ -1,0 +1,8 @@
+This is the workspace for the PRCS205 group integrating project. 
+
+The contributors are named below with their student numbers and email addresses alongside:
+Philip Edwards, 381831 philipedwards@live.co.uk
+Richard Imms 10405604 richardimms26@gmail.com,
+Nathaniel Ovington,
+Brian Viviers 10253311 brian.viviers@students.plymouth.ac.uk
+Dominic Youel 10061144. dominic.youel@students.plymouth.ac.uk

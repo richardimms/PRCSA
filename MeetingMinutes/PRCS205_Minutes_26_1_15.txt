@@ -1,0 +1,7 @@
+Completion of user requirements, prioritised and with time estimation
+Cognitive walkthrough completed - Nathan's absence will need proof of Extenuating circumstances:
+	- Further emails and contact have been sent
+Database design structure needs completion - left open for the group to work on. 
+	
+Questions for Torbjorn:
+	- As an admin, would it be expected that connection to the DB would be handled through the VPN?

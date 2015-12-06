@@ -1,0 +1,9 @@
+CREATE TABLE sessions
+(
+	sessions_id NUMBER
+		CONSTRAINT sessions_session_id_pk PRIMARY KEY,
+	member_id NUMBER
+		CONSTRAINT sessions_member_id_pk REFERENCES members(member_id),
+	session_date DATE
+		CONSTRAINT sessions_date_nn NOT NULL
+);

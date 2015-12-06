@@ -1,0 +1,10 @@
+Progress Meeting 24/03/2015
+
+- Ensure there is time for questions at the end.
+- Demonstration of all interfaces.
+	- Script the process.
+	- Create user stories.
+	- Act like it's a commercial presentation.
+- Make sure all equipment needed works in the room before presentation.
+- Don't talk low level, focus on high level langauge but encourage questions.
+- Ensure the person talking is not the person typing.

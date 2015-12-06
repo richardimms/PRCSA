@@ -1,0 +1,10 @@
+CREATE TABLE reviews
+	(
+		review_id NUMBER
+			CONSTRAINT companies_company_id_pk PRIMARY KEY,
+		transaction_id NUMBER
+			CONSTRAINT review_trans_id_fk REFERENCES transactions(transaction_id)
+			CONSTRAINT companies_company_name_nn NOT NULL,
+		review_value NUMBER
+			CONSTRAINT review_value_nn NOT NULL
+	);

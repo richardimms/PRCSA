@@ -1,0 +1,28 @@
+CREATE TABLE members
+    (
+	member_id NUMBER
+            CONSTRAINT member_member_id_pk PRIMARY KEY,
+       	forename VARCHAR(50)
+            CONSTRAINT member_forename_nn NOT NULL,
+        surname VARCHAR(50)
+            CONSTRAINT member_surname_nn NOT NULL,
+	date_of_birth DATE
+	    CONSTRAINT member_date_of_birth_nn NOT NULL,
+	avg_rating NUMBER
+	    CONSTRAINT member_avg_rating_nn NOT NULL,
+	balance NUMBER
+	    CONSTRAINT member_balance_nn NOT NULL,
+	address_1 VARCHAR(150)
+	    CONSTRAINT member_address_1_nn NOT NULL,
+	address_2 VARCHAR(150)
+	    CONSTRAINT member_address_2_nn NOT NULL,
+	city VARCHAR(30)
+	    CONSTRAINT member_city_nn NOT NULL,
+	postcode VARCHAR(10)
+	    CONSTRAINT member_postcode_nn NOT NULL,
+	contact_number VARCHAR(15)
+	    CONSTRAINT member_contact_number_nn NOT NULL,
+	email VARCHAR(255)
+	    CONSTRAINT member_email_nn NOT NULL
+            CONSTRAINT member_email_uq UNIQUE
+    );

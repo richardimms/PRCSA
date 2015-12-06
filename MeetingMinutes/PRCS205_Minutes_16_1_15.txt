@@ -1,0 +1,17 @@
+Finalised User Requirements - these will need ordering by importance
+System Requirements need to be added to report. See below.
+Functional requirements need completing later
+Awaiting pivotal tracker details
+We need to decide on member rules/assumptions and publish them
+Work allocation: Richard to continue with management plan,
+Dom, Phil, brian: UNF for database design.
+
+Questions for Torbjorn:
+	Should we make members' account/balance/transaction data visible to all members?
+	Is there a suggested limit for maximum/minimum credits or adverts?
+	
+System Requirements:
+	Encryption of payments should be performed using Google Checkout
+	All data should be encrypted using SSL free version
+	Automatic payments should be actioned - credits are held on confirmation of a transaction, then transferred
+	to the receiver upon confirmation of a transaction's completion. 

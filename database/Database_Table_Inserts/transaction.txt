@@ -1,0 +1,17 @@
+CREATE TABLE transactions
+	(
+		transaction_id NUMBER
+			CONSTRAINT transacation_trans_id_pk PRIMARY KEY,
+		advert_id NUMBER
+			CONSTRAINT transaction_adv_id_fk REFERENCES adverts(adverts_id),
+		payer	NUMBER
+			CONSTRAINT transaction_payer_fk REFERENCES members(member_id)
+			CONSTRAINT transaction_payer_nn NOT NULL,
+		payee	NUMBER
+			CONSTRAINT transaction_payee_fk REFERENCES members(member_id)
+			CONSTRAINT transaction_payee_nn NOT NULL,
+		credits_paid NUMBER
+			CONSTRAINT transaction_credits_nn NOT NULL,
+		date_completed DATE
+			CONSTRAINT transaction_date_nn NOT NULL	
+	);

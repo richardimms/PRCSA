@@ -1,0 +1,35 @@
+CREATE TABLE adverts
+  (
+    advert_id NUMBER
+    	CONSTRAINT advert_advert_id_pk PRIMARY KEY,
+    advert_type_id NUMBER
+	CONSTRAINT advert_advert_type_fk REFERENCES advert_types(advert_type_id)
+	CONSTRAINT advert_advert_type_nn NOT NULL,
+    member_id NUMBER
+	CONSTRAINT advert_member_id_fk REFERENCES members(member_id)
+	CONSTRAINT advert_member_id_nn NOT NULL,
+    category_id NUMBER
+	CONSTRAINT advert_category_id_fk REFERENCES categories(category_id)
+	CONSTRAINT advert_category_id_nn NOT NULL,
+    item_type_id
+	CONSTRAINT advert_item_type_fk REFERENCES item_types(item_type_id)
+	CONSTRAINT advert_item_type_nn NOT NULL,
+    title VARCHAR(100)
+	CONSTRAINT advert_title_nn NOT NULL,
+    description VARCHAR(500)
+	CONSTRAINT advert_description_nn NOT NULL,
+    date_adv DATE
+	CONSTRAINT advert_date_adv_nn NOT NULL,
+    date_exp DATE
+	CONSTRAINT advert_date_exp_nn NOT NULL,
+    cost NUMBER
+	CONSTRAINT advert_cost_nn NOT NULL,
+    image VARCHAR(200)
+	CONSTRAINT advert_image_nn NOT NULL,
+    transport CHAR(1)
+  	CONSTRAINT advert_transport_ck CHECK(transport IN ('N','Y'))
+	CONSTRAINT advert_transport_nn NOT NULL,
+    advert_tags VARCHAR(200)
+	CONSTRAINT advert_tags_nn NOT NULL,
+    date_completed DATE
+  );

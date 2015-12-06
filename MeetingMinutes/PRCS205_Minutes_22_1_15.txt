@@ -1,0 +1,9 @@
+Decision - do we keep track of delivery/transportation requirements?
+Decision - do we keep track of days a user will be free?
+We need to produce an ethical agreement form for the cognitive walk through
+Need to find out which diagrams are required for the initial planning document:
+	- Specific use case scenarios?
+	- Class, state diagrams?
+Work continues as before. 
+Phil delegated to finalise user requirements.
+Still no word from Nathan

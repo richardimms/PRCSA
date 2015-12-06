@@ -1,0 +1,5 @@
+INSERT INTO MEMBERS VALUES (1,'Richard','Imms','01/02/1992',0,10,'20 Deptford Place','North Hill','Plymouth','PL4 8JL','07347952051','richardimms26@gmail.com');
+INSERT INTO MEMBERS VALUES (2,'Philip','Edwards','02/01/1992',0,10,'10 North Road','Peverell','Plymouth','PL3 5UN','07767952254','philiped@ymail.com');
+INSERT INTO MEMBERS VALUES (3,'Dominic','Youel','02/21/1993',0,10,'20 Beaumont Avenue','Beamount','Plymouth', 'PL2 3RJ','07547952992', 'domY@hotmail.com');
+INSERT INTO MEMBERS VALUES (4,'Brian','Viviers','05/31/1989',0,10,'30 Clifton Place','North Hill','Plymouth', 'PL2 7JH','07767912911','brianviv@gmail.com');
+INSERT INTO MEMBERS VALUES (5,'John','Smith','01/20/1970',0,10,'1 Victoria Cresent','Mutley','Plymouth','PL4 7NH','07577952251','johnnysmith@ymail.com');

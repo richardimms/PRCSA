@@ -1,0 +1,1 @@
+INSERT INTO OFFERS VALUES (1,1,2,1,'I would like this doing','02/02/2015')

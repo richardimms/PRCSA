@@ -1,0 +1,49 @@
+NOTE: We will not use Tomcat. This document is just staying here incase we need it.
+
+
+
+
+
+
+When trying to run the server in Netbeans there is an error. The following will fix it.
+
+If you have not installed Tomcat in Netbeans then do the following.
+
+1. Download Tomcat version 8. The first zip option under Core. This is what is used on Nigels server.
+
+2. Unzip it anywhere you like.
+
+3. In netbeans on the menu bar select Tools > Servers  then add a new server 
+   and direct the path to the location of the unzipped folder.
+
+Once Tomcat is installed the to make it able to run do the following: 
+
+1. Open up the bin folder and then edit the catalina.bat file using Notepad++ or something.
+
+2. Find the following lines and remove the quotes from the two lines and then save:
+
+
+BEFORE:
+
+:noJuliConfig
+set "JAVA_OPTS=%JAVA_OPTS% %LOGGING_CONFIG%"
+
+..
+
+:noJuliManager
+set "JAVA_OPTS=%JAVA_OPTS% %LOGGING_MANAGER%"
+
+
+AFTER:
+
+:noJuliConfig
+set JAVA_OPTS=%JAVA_OPTS% %LOGGING_CONFIG%
+
+.. 
+
+:noJuliManager
+set JAVA_OPTS=%JAVA_OPTS% %LOGGING_MANAGER%
+
+3. It should work now.
+
+
